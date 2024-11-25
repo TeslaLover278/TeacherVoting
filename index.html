@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Voting</title>
+</head>
+<body>
+    <h1>Welcome to Teacher Voting</h1>
+    <h2>Choose an option:</h2>
+    <ul>
+        <li><a href="{{ url_for('results') }}">See Results</a></li>
+        <li><a href="{{ url_for('vote', teacher_name='Teacher A') }}">Vote for Teacher A</a></li>
+        <li><a href="{{ url_for('vote', teacher_name='Teacher B') }}">Vote for Teacher B</a></li>
+        <li><a href="{{ url_for('vote', teacher_name='Teacher C') }}">Vote for Teacher C</a></li>
+    </ul>
+</body>
+</html>
